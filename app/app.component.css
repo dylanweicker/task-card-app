@@ -1,0 +1,42 @@
+.container {
+    padding-top: 3rem;
+}
+
+.row{
+    margin-bottom: 1.5rem;
+}
+
+form{
+    text-align: center;
+}
+
+.btn {
+    background-color: #009688;
+    border-color: #009688;
+    margin-left: .4rem;
+}
+
+.btn:hover{
+    background-color: #00796b;
+    border-color: #00796b;
+
+}
+
+.btn:disabled{
+    background-color: #999999;
+    border-color: #999999;
+}
+
+i{
+    margin-right: .4rem;
+}
+
+.form-control:focus{
+    border-color: #009688;
+}
+
+h5{
+    text-align: center;
+    color: #ccc;
+    margin-top: 3rem;
+}

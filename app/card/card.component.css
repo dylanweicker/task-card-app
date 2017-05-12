@@ -1,0 +1,45 @@
+.card {
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.card,
+.card-footer,
+.card-header{
+    background-color: #ffffa5;
+    border: none;
+}
+
+.card.completed,
+.card.completed .card-footer,
+.card.completed .card-header{
+    background-color: #EEE;
+    color: #CCC;
+}
+
+.card-footer{
+    text-align: right;
+
+}
+.card-header{
+    text-align: right;
+    padding: 0;
+    padding-top: 0.1rem;
+}
+
+i{
+    color: #00cccc;
+    padding-right: .5rem;
+}
+
+.completed i{
+    color: #ccc;
+    padding-right: .5rem;
+}
+
+.hide-btn{
+    color: #cc0000;
+}
+.hide-btn:hover{
+    color: #f22;
+}

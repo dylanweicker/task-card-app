@@ -7,15 +7,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var task_1 = require("./model/task");
 var AppComponent = (function () {
     function AppComponent() {
+        this.tasks = [];
+        this.currentTask = new task_1.Task(null, false, false);
     }
+    AppComponent.prototype.addTask = function () {
+        var task = new task_1.Task(this.currentTask.content, this.currentTask.completed, this.currentTask.hidden);
+        this.tasks.push(task);
+        this.currentTask.content = null;
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
+        moduleId: module.id,
         selector: 'my-app',
-        template: '<h1>Skeleton Project</h1>'
+        templateUrl: 'app.component.html',
+        styleUrls: ['app.component.css']
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
